@@ -16,12 +16,14 @@ public class RegisterServlet extends HttpServlet {
         request.getRequestDispatcher("/registerForm.jsp").forward(request, response);
     }
 
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
         String name = request.getParameter("username");
         String email = request.getParameter("email");
+
 
 
         // Set attributes to be accessible in JSP
