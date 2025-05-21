@@ -31,9 +31,11 @@ public class FirstServlet extends HttpServlet {
             out.print("<a href='SecondServlet?uname=" + n + "'>visit</a>"); //used for sending to another servler
 
             out.close();
+
         }
         catch (Exception e) {
             System.out.println(e);
         }
     }
 }
+
